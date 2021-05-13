@@ -10,9 +10,9 @@ rl.question('Input a sentence or a name: ', function(answer){
     let lowRegStr = answer.toLowerCase().replace(re, '');
     let reverseStr = lowRegStr.split('').reverse().join('');
     if (lowRegStr ===reverseStr){
-        console.log(`${answer} is a palindrom!`)
+        console.log(`"${answer}" is a palindrome!`)
     } else{
-        console.log(`"${answer}" is NOT a palindrom!`)
+        console.log(`"${answer}" is NOT a palindrome!`)
     }
     rl.close();
 })
